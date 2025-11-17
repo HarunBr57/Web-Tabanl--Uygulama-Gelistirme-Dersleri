@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <style>
+        .ekran {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            background-color: black;
+            overflow: hidden;
+        }
+
+        .sayfa {
+            border: 1px solid rgb(41, 43, 43);
+            margin-top: 20px;
+            margin-bottom: 20px;
+            overflow-y: scroll;
+            animation: animasyon 5s infinite alternate;
+            border: 1px solid rgb(250,0,0);
+            background-color: rgb(41, 43, 43);
+            
+
+
+        }
+
+
+
+        body {
+            color: bisque;
+            padding: 0;
+            margin: 0;
+        }
+
+        .table1 {
+            text-align: center;
+
+        }
+        @keyframes animasyon{
+            0% {box-shadow:0px 0px 20px 5px rgba(250,0,0,0.9);}
+            50% {box-shadow:0px 0px 20px 5px rgba(0,250,0,0.9);}
+            100%{box-shadow:0px 0px 20px 5px rgba(0,0,250,0.9)}
+            
+        }
+        @keyframes animasyon2{
+            0%{font-size:20px;}
+            25%{font-size: 21px;}
+            50%{font-size: 22px;}
+            75%{font-size: 23px;}
+            100%{font-size: 24px;}
+        }
+        h1:hover{
+            text-shadow: 2px 2px 30px  black;
+        }
+        h1{
+            animation: animasyon2 5s infinite alternate;
+        }
+        .td1{
+            border: 1px solid whitesmoke;
+        }
+       
+
+    
+        
+    </style>
+    <div class="ekran">
+        <div class="sayfa">
+            <span>
+                <h1>Dijital Fotorafçılık kulübü</h1><br><br>
+                <h2>Objektifinizden daha büyük</h2><br><br>
+                <p>Kulubümüz,fotorafçılığa yeni başlayanlardan profesyonellere kadar her seviyeden fotoğraf <br>
+                    meraklısını bir araya getirmeyi amaçlamakadır.Bu sayfaya kulüp etkinliklermizi,atölye <br>
+                    çalışmalarımızı ve kayıt formumuzu bulablirsiniz.
+                </p>
+            </span>
+            <hr>
+            <span>
+
+                <h5>Yaklaşan Atölye Konuları</h5>
+                <ul>
+                    <li>Temel Kompozisyon Kuralları</li>
+                    <li>Işık Ve Gölge KUllanımı</li>
+                    <li>Portre Fotorafçılığı</li>
+                    <li>Gece Çekim Teknikleri</li>
+                </ul>
+                <ol type="1">
+                    <li><a href="HarunBr57.github.io" target="_blank">Eğitim Videosunu izle</a></li>
+                    <li>Ödev Çekim Teknikleri</li>
+                    <li>Portfolyoyu Güncelle</li>
+
+                </ol>
+            </span>
+            <hr>
+            <span>
+
+                <h5>Temel Ekiman Karşılaştırması</h5>
+
+                <table class="table1">
+                    <tr>
+                        <td class="td1" colspan="3">Ekipmanlar</td>
+                    </tr>
+                    <tr>
+                        <td class="td1"><b>Ekipman Türü</b></td>
+                        <td class="td1"><b>Avantaj</b></td>
+                        <td class="td1" ><b>Dezavantaj</b></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3" class="td1"><b>DSLR</b></td>
+                        <td class="td1">Optik Vizör</td>
+                        <td class="td1">Ağır</td>
+                    </tr>
+                    <tr>
+
+                        <td class="td1">Uzun Fil</td>
+                        <td class="td1">Canlı Pozlama Yok</td>
+                    </tr>
+                    <tr>
+                        <td class="td1">Eski Lens Uyumu yok </td>
+                        <td class="td1">Video ve Af zayıf</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3" class="td1">Aynasız</td>
+                        <td class="td1">Küçük</td>
+                        <td class="td1">Kısa Pil Ömrü</td>
+                    </tr>
+                    <tr>
+                        <td class="td1">Elektronik vizör</td>
+                        <td class="td1">Yapay</td>
+                    </tr>
+                    <tr>
+                        <td class="td1">Gelişmiş Af</td>
+                        <td class="td1">Eski Lensler için Adaptür</td>
+                    </tr>
+
+                </table>
+            </span>
+            <hr>
+            <span>
+                <div class="divresim">
+                    <H5>İlham Verenler</H5> <br>
+                    <img src="images.jpg" alt="Resim yüklenmedi">Güzel Bir dağ manzarası <br>
+                    <iframe height="300" width="300" src="https://youtu.be/xcBwuCV43CI?si=2g2nVQbTAFJvve2-" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </span>
+            <hr>
+            <span>
+                <table>
+                    <tr>
+                        <td colspan="2">
+                            <h4>Kulübe Katılın</h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Ad Soyad:</td>
+                        <td><input type="text" name="" id="" placeholder="Adınızı giriniz"></td>
+                    </tr>
+                    <tr>
+                        <td>E-posta:</td>
+                        <td> <input type="email" name="" id="" placeholder="email@adres.com"></td>
+                    </tr>
+                    <tr>
+                        <td>Deneyim Seviyesi:</td>
+                        <td><input type="radio" name="" id="">Başlangıç <input type="radio" name="" id=""> Orta Seviyesi
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>İlgilendiği Alanlar:</td>
+                        <td><input type="checkbox" name="" id=""> Portre <input type="checkbox" name="" id=""> Manzara
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> Şehir:</td>
+                        <td> <input type="file" name="" id=""></td>
+
+                    </tr>
+                    <tr>
+                        <td>Ek Notlar:</td>
+                        <td><textarea name="" id="" cols="30" rows="5"></textarea></td>
+
+                    </tr>
+                    <tr >
+                        <td class="tdorta"><input type="submit" value="Gönder"> <input type="reset" value="Temizle"></td>
+                    </tr>
+                </table>
+            </span>
+
+        </div>
+    </div>
+    
+
+
+</body>
+
+</html>
